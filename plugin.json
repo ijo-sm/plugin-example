@@ -1,0 +1,39 @@
+{
+    "name": "example-plugin",
+    "author": "ijo-sm",
+    "version": "1.0.0",
+    "panel": {
+        "dependencies": [],
+        "index": "./panel/index.js",
+        "include": "./panel/*",
+        "env": {
+            "version": ">=0.5.7"
+        }
+    },
+    "daemon": [
+        {
+            "dependencies": [],
+            "index": "./daemon/win/index.js",
+            "include": "./daemon/*",
+            "env": {
+                "version": {
+                    "stable": ">=0.8.3",
+                    "unstable": ">0.5.2"
+                },
+                "os": "win32"
+            }
+        },
+        {
+            "dependencies": [],
+            "index": "./daemon/linux/index.js",
+            "include": "./daemon/*",
+            "env": {
+                "version": {
+                    "stable": ">=0.8.3",
+                    "unstable": ">0.5.2"
+                },
+                "os": "linux"
+            }
+        }
+    ]
+}
