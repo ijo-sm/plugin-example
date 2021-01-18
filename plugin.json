@@ -1,0 +1,6 @@
+{
+  "name": "example-plugin",
+  "author": "IJO",
+  "dependencies": [],
+  "index": "./index.js"
+}
